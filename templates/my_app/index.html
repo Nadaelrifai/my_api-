@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>im inside the tempate</h1>
+  
+    {{request.user}}
+    {% if songs %}
+  
+    <table>
+        <th>Name</th>
+        <th>Album</th>
+        {% for album in albums  %}
+
+        <tr><td>{{ album.name }}</td>
+            <td>{{ song.albums.name }}</td>
+        
+        </tr>
+
+        {%endfor%}
+    </table>
+
+    {%endif%}
+ 
+   
+    
+</body>
+</html>
